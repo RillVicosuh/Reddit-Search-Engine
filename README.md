@@ -109,7 +109,7 @@ The web backend uses Python and libraries like pylucene and Flask. The frontend 
 
 1. Navigate to your project directory. 
 
-2. Run the following command to index all the Reddit posts in the JSON file located in the `reddit_data` folder:
+2. Run the following command to index all the Reddit posts in the JSON file located in the `output_directory` folder:
 
     ```
     python3 pylucene.py
