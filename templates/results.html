@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+</head>
+<body>
+    <h1>Search Results for "{{ query }}"</h1>
+    {% for result in results %}
+        <h3>Title: {{ result['title'] }}</h3>
+	{% autoescape false %}
+	<p><b>Body:</b><br> {{ result['body'] }}</p>
+	{% endautoescape %}
+	<p><b>URL:</b> {{ result['url'] }}</p>
+	<p><b>Permalink:</b> {{ result['permalink'] }}</p>
+	<p><b>Created at: </b>{{ result['created_utc'] }}</p>
+	<p><b>Score:</b> {{ result['score'] }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
