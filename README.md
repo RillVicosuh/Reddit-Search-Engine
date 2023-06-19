@@ -2,6 +2,9 @@
 
 This project is composed of two main parts: Reddit post crawling/collecting and an indexing/search system. The collector system utilizes the PRAW Python library to crawl and gather data from specified subreddits. The search system, deployed on the UCR server, is a Flask-based web application that uses pylucene to index and search the collected Reddit posts.
 
+## DEMO VIDEO: 
+https://youtu.be/a-o47FwY8mI
+
 ## Part 1: Reddit Post Collector
 
 ### Architecture
